@@ -99,7 +99,7 @@ public class RecomentFragment extends BaseFrament implements OkHttpUtil.OnDownDa
         }else if (url.equals(Contants.URL.KONWLIKE_DATAS)){
             KnowLikeEntity knowLikeEntity = JsonUtil.getListByJSON(json);
             List<KnowLikeEntity.ObjEntity.CustomizedEntity.DataEntity> data = knowLikeEntity.getObj().getCustomized().getData();
-            adapter.setDatas(data,2);
+            adapter.setDatas(data);
 
         }
 
